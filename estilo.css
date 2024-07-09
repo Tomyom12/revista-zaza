@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe6f2;
+}
+header {
+    background-color: #d63384;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+nav {
+    background-color: #e0aaff;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-wrap: wrap;
+}
+.main-content {
+    flex: 3;
+}
+.sidebar {
+    flex: 1;
+    margin-left: 20px;
+}
+.article {
+    margin-bottom: 20px;
+}
+.article img {
+    max-width: 100%;
+    height: auto;
+}
+.footer {
+    background-color: #d63384;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.subscribe {
+    background-color: #f8bbd0;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.subscribe input[type="email"] {
+    width: 80%;
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.subscribe input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d63384;
+    color: #fff;
+}
+.popular-articles {
+    background-color: #f8bbd0;
+    padding: 20px;
+}
+.popular-articles ul {
+    list-style: none;
+    padding: 0;
+}
+.popular-articles li {
+    margin-bottom: 10px;
+}
+.popular-articles a {
+    text-decoration: none;
+    color: #d63384;
+}
+.popular-articles a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+    }
+    nav a {
+        margin: 5px 0;
+    }
+    .subscribe input[type="email"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
